@@ -1,0 +1,81 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#road{
+    position: relative;
+}
+
+#aeroplane,#chopper{
+    position: absolute;
+    top: 5px;
+}
+
+#aeroplane{
+    animation: aeroplane 10s 1s infinite linear;
+}
+
+#chopper{
+    animation: aeroplane 15s 1s infinite linear;
+}
+
+@keyframes aeroplane {
+0% {left: 0px; top: 0px;}
+100% {left: 1350px; top: 0px;}
+}
+
+#man,#lady{
+    position: absolute;
+    top: 300px;
+}
+
+#man{
+    animation: man 15s 1s infinite linear;
+}
+
+@keyframes man {
+    0%{left: 0px; top: 300px;}
+    100% {left: 1350px; top: 300px;}
+}
+
+#lady{
+animation: lady 15s 1s infinite linear;
+}
+
+@keyframes lady {
+    0%{right: 0px; top: 300px;}
+    100% {right: 1350px; top: 300px;}
+}
+
+#car,#bicycle,#rider{
+    position: absolute;
+    top: 450px;
+}
+
+#car{
+    animation: car 5s 1s infinite linear;
+}
+
+@keyframes car {
+    0%{left: 0px; top: 400px;}
+    100% {left: 1350px; top: 400px;}
+}
+
+#bicycle{
+    animation: bicycle 10s 1s infinite linear;
+}
+
+@keyframes bicycle {
+    0%{left: 0px; top: 400px;}
+    100% {left: 1350px; top: 400px;}
+}
+
+#rider{
+    animation: rider 8s 1s infinite linear;
+}
+
+@keyframes rider {
+    0%{right: 0px; top: 400px;}
+    100% {right: 1350px; top: 400px;}
+}
